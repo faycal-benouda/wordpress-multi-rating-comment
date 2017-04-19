@@ -1,0 +1,113 @@
+.star-rating{
+border-spacing: 0.5rem;
+    width: 350px;
+    border: none;
+    border-collapse: collapse;
+}
+.star-rating td,
+.star-rating tr {
+	border: 0;
+}
+.star-rating td {
+	padding:0 5px !important;
+}
+
+.star-rating p {
+	margin: 0;
+}
+
+.star-rating .comment-form-rating label {
+	font-size: 12px !important;
+    margin: 0 !important;
+    text-transform: none !important;
+    font-weight: bold;
+    min-width: 210px;
+    text-align: right;
+}
+
+.star-rating__wrap {
+	padding-top: 5px;
+    overflow: hidden;
+    display: block;
+}
+.star-rating__wrap:after{
+content: "";
+display: table;
+clear: both;
+}
+.star-rating__ico{
+float: right;
+padding-left: 2px;
+cursor: pointer;
+color: #FFB300;
+}
+.star-rating__ico:last-child{
+padding-left: 0;
+}
+.star-rating__input{
+display: none;
+}
+
+.star-rating__ico:before {
+	font-family:'FontAwesome';
+        content: "\f006";
+        font-size: 16px;
+        color:#ffbc00;
+}
+
+.star-rating__ico:hover:before,
+.star-rating__ico:hover ~ .star-rating__ico:before,
+.star-rating__input:checked ~ .star-rating__ico:before {
+	font-family:'FontAwesome';
+    content: "\f005";
+}
+
+/*comment**/
+h2, .subtitle, .comment-reply-title {
+    color: #383e51;
+    margin: 20px 0;
+    line-height: 1.2em;
+    font-weight: bold;
+    font-size: 1.4em;
+    font-family: "Oxygen",sans-serif;
+}
+
+.standard-content {
+    padding: 0 20px;
+    margin: 20px 0;
+    text-align: justify;
+}
+
+#comments {
+    margin-top: -10px;
+    margin-bottom: 25px;
+}
+
+.colthree {
+	width: 33%;
+	float: left;
+}
+
+.mediuimcol {
+	padding-left: 10px;
+	padding-right: 10px;
+}
+textarea#comment {
+	height: 120px;
+
+}
+
+.comment-content p {
+	margin-bottom: 5px;
+}
+
+.comment-rating {
+margin-bottom: 5px;
+font-size: 12px;
+}
+
+.comment-rating img {
+	float: left;
+	margin-right: 10px;
+	margin-top: 4px;
+}
